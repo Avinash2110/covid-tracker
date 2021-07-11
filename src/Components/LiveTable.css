@@ -1,0 +1,34 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@600&display=swap');
+
+.table-container{
+    height: 600px;
+    overflow: auto;
+    display: flex;
+    justify-content: center;
+}
+
+.table{
+    margin: 10px 15px;
+}
+
+.table-body{
+    
+}
+
+tr{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    height: 20px;
+    padding: 8px 5px;
+    border-radius: 10px;
+}
+
+tr:nth-of-type(odd){
+    background-color: #f0ffffcb;
+}
+
+td{
+    font-family: 'Nunito', sans-serif;
+}

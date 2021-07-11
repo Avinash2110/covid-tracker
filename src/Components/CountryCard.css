@@ -1,0 +1,16 @@
+.chart-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 300px;
+    border: 2px solid #ffffff;
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px 10px #ffffff;
+}
+
+@media screen and(max-width: 900px) {
+    .chart-container{
+        width: 80%;
+        margin-bottom: 30px;
+    }
+}

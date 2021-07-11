@@ -1,38 +1,135 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@600&display=swap');
+
+body{
+    background-color: #1f1f1ffc;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.app-container{
+    padding: 20px 15px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.title-container{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.title{
+    color: #BF3312;
+    font-size: 50px;
+    font-family: 'Nunito', sans-serif;
+    letter-spacing: 2px;
 }
 
-.App-link {
-  color: #61dafb;
+.page-divider{
+    display: flex;
+    width: 100%;
+    margin-top: 25px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+@media screen and (max-width: 800px){
+    .page-divider{
+        display: flex;
+        flex-direction: column;
+        margin-top: 25px;
+    }
 }
+
+.left-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-basis: 70%;
+}
+
+.right-container{
+    display: flex;
+    flex-direction: column;
+    flex-basis: 25%;
+    border: 2px solid #ffffff;
+    height: 830px;
+    border-radius: 10px;
+    margin-left: 5px;
+    background-color: #808080bf;
+    justify-content: center;
+}
+
+.right-container-title{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 40px;
+    padding: 10px 5px;
+
+}
+
+.ranking-title{
+    color: #ffffff;
+    font-family: 'Nunito', sans-serif;
+}
+
+.country-dropdown-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+#dropdown{
+    width: 250px;
+    height: 50px;
+    border: 2px solid #ffebcd;
+    border-radius: 10px;
+    font-family: 'Nunito', sans-serif;
+    font-size: 20px;
+}
+
+.country-status-container{
+    display: flex;
+    width: 95%;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+
+@media screen and (max-width: 900px){
+    .country-status-container{
+        display: flex;
+        flex-direction: column;
+        align-items: space-around;
+        justify-content: space-between;
+    }
+
+}
+
+
+@media screen and (max-width: 800px){
+    .leaflet-container{
+        height: 500px;
+    }
+}
+
+.footer{
+    display: flex;
+    width: 100%;
+    height: 50px;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffffff;
+    border-radius: 10px;
+}
+
+.footer-text{
+    color: #1f1f1f;
+    font-family: 'Nunito', sans-serif;
+}
+
+.heart{
+    color: #E21717;
+}
+
+  
